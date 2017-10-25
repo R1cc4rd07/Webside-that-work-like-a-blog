@@ -8,6 +8,55 @@ body
 	margin:0;
 	background-color: lightgray;
 }
+div.loginbar
+{
+	background-color: #333;
+	height: 1.5rem;
+	width: 100%;
+}
+div.loginbar div.login
+{
+	float: right;
+	position: relative;
+    display: inline-block;
+}
+div.loginbar div.login button.loginbtn
+{
+	margin:0;
+	padding:6px 8px;
+	font-size: 0.7rem;
+	color: white;
+	background-color: #333;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+div.loginbar div.login button:hover 
+{
+	background-color: #111;
+}
+div.loginbar div.login div.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    padding: 12px 16px;
+    z-index: 1;
+    right: 0;
+    border: solid 2px #333;
+    border-top: none;
+    opacity: .9;
+}
+div.loginbar div.login div.dropdown-content input[type="email"], div.loginbar div.login div.dropdown-content input[type="password"]
+{
+	outline: none;
+	border: none;
+	border-bottom: solid 2px green;
+	background-color: #f9f9f9;
+	box-shadow: none;
+}
+
 header.HeaderImg
  {
 	background-image: url(../img/header.jpg);
@@ -113,9 +162,10 @@ footer ul li a.active
 	background-color: #4CAF50;
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 800px)
 {
-	* {font-size: 12px;}
+	* {font-size: 1rem;}
+	div.loginbar {display:none;}
 	nav ul li.right, nav ul li {float:none; border-right: none;}
 	nav ul {position: static; display: none;}
     /*Create vertical spacing*/
@@ -125,4 +175,8 @@ footer ul li a.active
     /*Display 'show menu' link*/
     .show-menu {display:block;}
 	footer ul li {border-right: none;}
+}
+@media screen and (max-width: 600px)
+{
+	*{font-size: 0.9rem;}
 }

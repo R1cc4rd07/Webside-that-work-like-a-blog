@@ -20,7 +20,7 @@ section.row:after
 	display: table;
 	clear: left;
 }
-@media screen and (max-width: 600px) 
+@media screen and (max-width: 800px) 
 {
 	body section.row div.column.side, body section.row div.column.middle  {width: 100%; clear:both; float:none; text-align: center;}
 }

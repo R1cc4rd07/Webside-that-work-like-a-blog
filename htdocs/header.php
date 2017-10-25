@@ -1,3 +1,24 @@
+<?php 
+session_start();
+$pdo = new PDO('mysql:host=localhost;dbname=user', 'root', '');
+if(isset($_GET['login'])) {
+	$email = $_POST['email'];
+	$passwort = $_POST['passwort'];
+	
+	$statement = $pdo->prepare("SELECT * FROM users WHERE email = :email");
+	$result = $statement->execute(array('email' => $email));
+	$user = $statement->fetch();
+	
+	//Überprüfung des Passworts
+	if ($user !== false && password_verify($passwort, $user['passwort'])) {
+		$_SESSION['userid'] = $user['id'];
+		header("location: login.php");
+	} else {
+		echo "E-Mail oder Passwort war ungültig<br>";
+	}
+	
+}
+?>
 <!DOCTYPE html5>
 <html lang="de">
 <head>
@@ -30,7 +51,7 @@
 		<label for="show-menu" class="show-menu"><span>&#9776;</span> Navigation</label>
 		<input type="checkbox" id="show-menu" role="button">
 		<ul id="menu">
-			<li><a href="#">Home</a></li>
+			<li><a href="seite2.php">Home</a></li>
 			<li><a href="#">About</a></li>
 			<li><a href="#">Portfolio</a></li>
 			<li><a href="#">News</a></li>

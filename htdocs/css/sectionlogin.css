@@ -1,0 +1,29 @@
+div.sidenav
+{
+	margin:0;
+	padding:0;
+	height: 100%;
+	width:9%;
+}
+div.sidenav ul
+{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+	background-color: #333;
+	height:100%;
+}
+div.sidenav ul li
+{
+	height: 3rem;
+	text-align: center;
+	border-bottom: 2px solid #111;
+}
+div.sidenav ul li a
+{
+	color: white;
+	display:block;
+	padding: 14px 16px;
+	text-decoration: none;	
+}

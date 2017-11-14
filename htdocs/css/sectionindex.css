@@ -1,0 +1,26 @@
+/* Section CSS datei */
+
+section.row div.column
+{
+	padding: 15px;
+	text-align: center;
+	float: left;
+}
+section.row div.column.side
+{
+	width: 25%;
+}
+section.row div.column.middle
+{
+	width:50%;
+}
+section.row:after
+{
+	content: "";
+	display: table;
+	clear: left;
+}
+@media screen and (max-width: 800px) 
+{
+	body section.row div.column.side, body section.row div.column.middle  {width: 100%; clear:both; float:none; text-align: center;}
+}

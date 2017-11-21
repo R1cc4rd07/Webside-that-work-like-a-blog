@@ -1,11 +1,13 @@
 <?php
 session_start();
-$pdo = new PDO('mysql:host=localhost;dbname=user', 'root', '');
+include 'Script/Datenbanken.php';
 ?>
-<!DOCTYPE html5>
+<!DOCTYPE HTML>
 <html lang="de">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<meta charset="UTF-8"/>
 	<title>Plazhalter</title>
 	<link rel="stylesheet" type="text/css" href="css/Header,nav,footer.css">
 	<link rel="stylesheet" type="text/css" href="css/sectionindex.css">

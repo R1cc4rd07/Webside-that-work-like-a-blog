@@ -13,13 +13,14 @@ include 'Script/login.php';
 
 					Dein Passwort:<br>
 					<input type="password" size="20"  maxlength="20" name="passwort"><br>
-					<label><input type="checkbox" name="angemeldet_bleiben" value="1"> stay loged</label><br>
+
 					<input type="submit" value="Abschicken">
 				</form>
 			</div>
 			<div class="dropdown-content2">
 				<ul>
-					<li><a href="Script/Logout.php">Logout</a></li>
+					<li><a href="../loginSeite.php">Profil</a></li>
+					<li><a href="../Script/Logout.php">Logout</a></li>
 				</ul>
 			</div>
 		</div>

@@ -1,6 +1,5 @@
 <?php 
 include 'head/headlogin.php';
-include 'Script/login.php';
 ?>
 <body>
 	<div class="loginbar">

@@ -2,7 +2,9 @@
 session_start();
 include 'Script/Datenbanken.php';
 include 'Script/eingeloggt.php';
-include 'Script/Datenaendern.php';?>
+include 'Script/Datenaendern.php';
+include 'Script/login.php';
+?>
 <!DOCTYPE HTML>
 <html lang="de">
 <head>

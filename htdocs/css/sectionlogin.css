@@ -47,45 +47,45 @@ section.login div.sidenav ul li a:hover
 
 section.login div.Profil
 {
-	width: 35%;
-	margin-top: 5%;
-	margin-left: 32.5%;
-	margin-bottom: 5%;
-	text-align:center;
-	background-color: blue;
-	height: 100%;
-	border: 2px solid Black;
+	background-color: white;
+	margin-left: 35%;
+	margin-right:35%;
+	margin-top: 10%;
+	margin-bottom:10%;
+	border: 1px solid black;
+	width: 30%;
+	height: 80%;
+}
+section.login div.Profil h1
+{
+	margin-top: 2%;
+	font-size: 2rem;
+	text-align: center;
 }
 section.login div.Profil div.containerpro
 {
-	padding: 3%;
-	text-align: left;
+	margin-top: 5%;
+	margin-left: 3%;
+	margin-right: 3%;
 }
-section.login div.Profil div.conteinerpro div.row1
+section.login div.Profil div.containerpro .edit
 {
-	padding: 10px;
-}
-section.login div.Profil div.conteinerpro div.row2
-{
-	padding: 10px;
-}
-section.login div.Profil div.containerpro div.btn
-{
-	text-align: center;
-	padding: 20px;
-}
-section.login div.Profil div.containerpro div.btn .edit
-{
-	width: 10%;
+	font-size: 1rem;
+	margin-top: 10%;
+	margin-left: 42.5%;
+	width: 15%;
 	border: none;
-	border: 1px solid #333;
-	background-color: lightgray;
+	border: 1px solid black;
 	outline: none;
+	box-shadow: 0 2px 2px gray;
+	text-decoration: none;
+	margin-bottom: 5%;
 	cursor: pointer;
 }
-section.login div.Profil div.containerpro div.btn .edit:hover
+section.login div.Profil div.containerpro .edit:hover
 {
-	background-color: gray;
+	background-color: #bbb;
+	box-shadow: 0 5px 5px #bbb;
 }
 section.login div.Profil div.containerpro label.label2
 {
@@ -94,39 +94,40 @@ section.login div.Profil div.containerpro label.label2
 section.login div.Profil div.containered
 {
 	display: none;
-	padding: 3%;
-	text-align: left;
+	margin-top: 5%;
+	margin-left: 3%;
+	margin-right: 3%;
 }
-section.login div.Profil div.containered label.label12
+section.login div.Profil div.containered input[type = text], div.Profil div.containered input[type = email]
 {
-	float: right;
-	text-align: right;
-}
-section.login div.Profil div.containered label.label12 input[type = text], div.Profil div.containered label.label12 input[type = email]
-{
-	text-align: right;
-	border: none;
-	border-bottom: 1.5px solid #7FFF00;
-	background-color: lightgray;
-	width: 95%;
-}
-section.login div.Profil div.containered div.btn1
-{
-	text-align: center;
-	padding: 20px;
-}
-section.login div.Profil div.containered div.btn1 .aendern
-{
-	width:10%;
-	border: none;
-	border: 1px solid #333;
-	background-color: lightgray;
+	margin-top: 3%;
+	border:none;
+	border-bottom: 1.3px solid #7FFF00;
 	outline: none;
-	cursor: pointer;
+	text-decoration: none;
+	width: 94%;
 }
-section.login div.Profil div.containerpro div.btn .aendern:hover
+
+section.login div.Profil div.containered .aendern
 {
-	background-color: gray;
+	font-size: 1rem;
+	margin-top: 10%;
+	margin-left: 42.5%;
+	margin-right: 42.5%;
+	margin-bottom: 5%;
+	width: 15%;
+	border: none;
+	border: 1px solid black;
+	outline: none;
+	text-decoration: none;
+	cursor: pointer;
+	box-shadow: 0 2px 2px gray;
+	
+}
+section.login div.Profil div.containered .aendern:hover
+{
+	background-color: #bbb;
+	box-shadow: 0 5px 5px #bbb;
 }
 
 /* Style für die Passwordaendern seite */
@@ -173,7 +174,7 @@ section.pwaendern div.conpw form input[type="submit"]
 	width: 15%;
 	border: none;
 	border: 1px solid black;
-	box-shadow: 2px 2px lightgray;
+	box-shadow: 0 2px 2px gray;
 	outline: none;
 	cursor: pointer;
 }
@@ -181,5 +182,22 @@ section.pwaendern div.conpw form input[type="submit"]:hover
 {
 	background-color: gray;
 	box-shadow: none;
-	box-shadow: 4px 4px gray;
+	box-shadow: 0 5px 5px gray;
+}
+
+/***************************************/
+/*      Style für Seite Bearbeiten     */
+/***************************************/
+
+
+
+
+/***************************************/
+/*       Style für Seite include       */
+/***************************************/
+
+/* nur zur weiter gabe welche id gemeint ist */
+section.include form .idin
+{
+	display:none;
 }

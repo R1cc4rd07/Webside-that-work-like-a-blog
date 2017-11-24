@@ -23,7 +23,3 @@ include 'Script/passwortaendernn.php';
 		</form>
 	</div>
 </section>
-
-<?php 
-include 'footer.php';
-?>

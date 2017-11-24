@@ -3,7 +3,8 @@
 include 'headernav/headernavindex.php';
 ?>
 
-<section class="row">
+<section class="index">
+	<div class="row">
 		<div class="column side">
 			<h3>Seidbar 1</h3>
 			<p>Hallo ich bin ein Mensch. Hallo ich bin ein Mensch. Hallo ich
@@ -92,7 +93,8 @@ include 'headernav/headernavindex.php';
 			
 			</p>
 		</div>
-	</section>
+	</div>
+</section>
 <?php 
 	include 'footer.php'
 ?>

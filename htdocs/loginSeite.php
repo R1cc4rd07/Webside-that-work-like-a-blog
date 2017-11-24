@@ -49,6 +49,3 @@ include 'headernav/headernavlogin.php';
 		</div>
 	</div>
 </section>
-<?php 
-include 'footer.php';
-?>

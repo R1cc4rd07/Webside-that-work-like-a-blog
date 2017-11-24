@@ -10,7 +10,7 @@ include 'Script/Datenbanken.php';
 	<meta charset="UTF-8"/>
 	<title>Plazhalter</title>
 	<link rel="stylesheet" type="text/css" href="css/Header,nav,footer.css">
-	<link rel="stylesheet" type="text/css" href="css/sectionindex.css">
+	<link rel="stylesheet" type="text/css" href="css/section.css">
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="javascript/Dropdownlogin.js"></script>

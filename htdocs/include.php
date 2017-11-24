@@ -4,27 +4,29 @@ include 'headernav/headernavlogin.php';
 <section class="include">
 	<div class="container0">
 		<?php 
-			$Statemant = $pdo->prepare("SELECT * FROM textablage.ablagetext WHERE :id");
-			$result = $Statemant->execute(array('id' => $_GET['id']));
+			$id = $_GET['id'];
+			$Statemant = $pdo->prepare("SELECT * FROM textablage.ablagetext WHERE id = :id");
+			$result = $Statemant->execute(array('id' => $id));
 			$eintrag = $Statemant->fetch();
-			
 		?>
-		<form action="Script/Dateneinlesen.php" name="beitrag" method="post" >
-			<p>Titel: 
-			<input type="number" name="id" class="idin" value="<?php if($_GET['id'] >= 1) {echo $eintrag['id'];}else {echo '0';} ?>">
-			<input type="text" name="titel" class="titelin" value="<?php if($_GET['id'] >= 1) { echo $eintrag['titel'];}else { echo '';} ?>"></p>
-			<br>
-			<p>Summery: 
-			<input type="text" name="summary" class="summaryin" value="<?php if($_GET['id'] >= 1) { echo $eintrag['summary'];}else { echo ''; } ?>"></p>
-			<br>
-			<br>
+		<form action="Script/Dateneinlesen.php?id=<?php echo $id ?>" name="beitrag" method="post" >
+			<p>Titel: </p>
+			<textarea id="text" name="titel" class="titelin"  cols ="50" rows="1"><?php if($id >= 1) { echo $eintrag['titel'];}else { echo '';} ?></textarea>
+			<p>Summery: </p>
+			<textarea id="text" name="summary" class="summaryin" cols="50" rows="1"><?php if($id >= 1) { echo $eintrag['summary'];}else { echo ''; } ?></textarea>
 			<p>Content: </p>
-			<textarea id="text" name="content" class="contentin" cols="100" rows="10"><?php if($_GET['id'] >= 1) {echo $eintrag['content'];} else {echo '';} ?></textarea>
-			<br>
+			<div class="toolbar">
+				<ul>
+					<li><a href="#" class="btn">Fett</a></li>
+					<li><a href="#" class="btn">Untersichrichen</a></li>
+				</ul>
+			</div>
+			<hr>
+			<div class="textfeld">
+			<textarea style="clear:both;" id="text" name="content" class="contentin" cols="100" rows="10"><?php if($id >= 1) {echo $eintrag['content'];} else {echo '';} ?></textarea>
+			</div>
+			
 			<input type="submit" name="aktivate" class="changbtn" value="ändern">
 		</form>
 	</div>
 </section>
-<?php 
-include 'footer.php';
-?>

@@ -16,7 +16,7 @@ body
 div.loginbar
 {
 	background-color: #333;
-	height: 1.5rem;
+	height: 2em ;
 	width: 100%;
 }
 div.loginbar div.login
@@ -30,7 +30,7 @@ div.loginbar div.login button.loginbtn
 {
 	margin:0;
 	padding:6px 8px;
-	font-size: 0.7rem;
+	font-size: .8rem;
 	color: white;
 	background-color: #333;
 	border: none;

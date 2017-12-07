@@ -9,25 +9,46 @@
 /*   Style für die Hauptseite Index   */
 /**************************************/
 
-section.index div.row div.column
+ection.index div.container0 
 {
-	padding: 15px;
-	text-align: center;
-	float: left;
+	margin: 2%;
+	padding: 2%;
 }
-section.index div.row div.column.side
+
+section.index div.container0 label hr
 {
-	width: 25%;
+	margin-top: 1%;
+	margin-bottom: 1%;
 }
-section.index div.row div.column.middle
+section.index div.container0 label div.rahmen h1
 {
-	width:50%;
+	text-align:center;
+	font-size: 3rem;
+	margin-bottom: 1%;
 }
-section.index div.row:after
+section.index div.container0 label div.rahmen h3
 {
-	content: "";
-	display: table;
-	clear: left;
+	font-size: 2rem;
+	margin-bottom: .5%;
+	margin-left: 24%;
+}
+section.index div.container0 label div.rahmen p
+{
+	width: 52%;
+	font-size: 1rem;
+	max-langht: 100;
+	margin-left: 24%;
+	margin-bottom: .7%;
+}
+section.index div.container0 label div.rahmen
+{
+	background-color: white;
+	margin-top: 1%;
+	padding: 1%;
+	margin-left: 10%;
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 80%;
 }
 
 /**************************************/
@@ -44,17 +65,17 @@ section.login div.sidenav ul
 	overflow: auto;
 	background-color: #333;
 	border-top: 2px solid #bbb;
-	padding-left: 40%;
+	padding-left: 41.325%;
 }
 section.login div.sidenav ul li
 {
-	float: left;
+	float: right;
 	text-align: center;
-	border-right: 2px solid #bbb;
+	border-left: 2px solid #bbb;
 }
 section.login div.sidenav ul li:last-child
 {
-	border-right: none;
+	border-left: none;
 }
 section.login div.sidenav ul li a
 {
@@ -105,6 +126,7 @@ section.login div.Profil div.containerpro .edit
 	border: 1px solid black;
 	outline: none;
 	box-shadow: 0 2px 2px gray;
+	border-radius: 3px 3px;
 	text-decoration: none;
 	margin-bottom: 5%;
 	cursor: pointer;
@@ -145,6 +167,7 @@ section.login div.Profil div.containered .aendern
 	width: 15%;
 	border: none;
 	border: 1px solid black;
+	border-radius: 3px 3px;
 	outline: none;
 	text-decoration: none;
 	cursor: pointer;
@@ -218,6 +241,40 @@ section.pwaendern div.conpw form input[type="submit"]:hover
 /*      Style für Seite Bearbeiten     */
 /***************************************/
 
+section.bearbeiten div.sidenav ul
+{
+	display: block;
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:3%;
+	overflow: auto;
+	background-color: #333;
+	border-top: 2px solid #bbb;
+	padding-left: 41.325%;
+}
+section.bearbeiten div.sidenav ul li
+{
+	float: left;
+	text-align: center;
+	border-right: 2px solid #bbb;
+}
+section.bearbeiten div.sidenav ul li:last-child
+{
+	border-right: none;
+}
+section.bearbeiten div.sidenav ul li a
+{
+	color: white;
+	display:block;
+	padding: 14px 16px;
+	text-decoration: none;	
+}
+section.bearbeiten div.sidenav ul li a:hover
+{
+	background-color: #111;
+}
 section.bearbeiten div.container0 
 {
 	margin: 2%;
@@ -226,16 +283,18 @@ section.bearbeiten div.container0
 }
 section.bearbeiten div.container0 a.neubtn
 {
-	padding: .1%;
+	padding: .5%;
 	color: black;
 	text-decoration: none;
 	outline: none;
+	background-color: white;
 	border: 1px solid black;
-	text-shadow: 0 2px 2px gray;
+	border-radius: 5px;
+	box-shadow: 0 5px 5px gray;
 }
 section.bearbeiten div.container0 a.neubtn:hover
 {
-	text-shadow: 0 5px 5px gray;
+	box-shadow: none;
 	background-color: #bbb;
 }
 section.bearbeiten div.container0 hr
@@ -243,27 +302,55 @@ section.bearbeiten div.container0 hr
 	margin-top: 1%;
 	margin-bottom: 1%;
 }
-section.bearbeiten div.container0 h1
+section.bearbeiten div.container0 div.rahmen h1
+{
+	text-align:center;
+	font-size: 3rem;
+	margin-bottom: 1%;
+}
+section.bearbeiten div.container0 div.rahmen h3
 {
 	font-size: 2rem;
 	margin-bottom: .5%;
-	margin-left: 5%;
+	margin-left: 15%;
 }
-section.bearbeiten div.container0 h3
+section.bearbeiten div.container0 div.rahmen p
 {
-	fontsize: 1ream;
-	margin-bottom: .3%;
-	margin-left: 5%;
-}
-section.bearbeiten div.container0 p
-{
+	width: 70%;
+	font-size: 1rem;
 	max-langht: 100;
-	margin-left: 5%;
-	margin-bottom: .5%;
+	margin-left: 15%;
+	margin-bottom: .7%;
 }
-section.bearbeiten div.container0 a.edit
+section.bearbeiten div.container0 div.rahmen a
 {
-	margin-left: 5%;
+	width: 10%;
+	text-decoration: none;
+	outline: none;
+	color: black;
+	padding: .3%;
+	border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px gray;
+
+}
+section.bearbeiten div.container0 div.rahmen a.edit
+{
+	margin-left: 45%;
+}
+section.bearbeiten div.container0 div.rahmen a.edit:hover , section.bearbeiten div.container0 div.rahmen a.delet:hover
+{
+	background-color: gray;
+	box-shadow: none;
+}
+section.bearbeiten div.container0 div.rahmen
+{
+	background-color: white;
+	padding: 1%;
+	margin-left: 20%;
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 60%;
 }
 
 
@@ -271,55 +358,118 @@ section.bearbeiten div.container0 a.edit
 /*       Style für Seite include       */
 /***************************************/
 
+
+/* loginnav style */
+section.include div.sidenav ul
+{
+	display: block;
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:3%;
+	overflow: auto;
+	background-color: #333;
+	border-top: 2px solid #bbb;
+	padding-left: 41.325%;
+}
+section.include div.sidenav ul li
+{
+	float: left;
+	text-align: center;
+	border-right: 2px solid #bbb;
+}
+section.include div.sidenav ul li:last-child
+{
+	border-right: none;
+}
+section.include div.sidenav ul li a
+{
+	color: white;
+	display:block;
+	padding: 14px 16px;
+	text-decoration: none;	
+}
+section.include div.sidenav ul li a:hover
+{
+	background-color: #111;
+}
+
+
+/* main style */
 section.include div.container0
 {
-	margin: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: 25%;
+	margin-right: 25%;
 	padding: 2%;
+	width: 50%;
 }
 section.include div.container0 form textarea[id="text"].titelin, section.include div.container0 form textarea[id="text"].summaryin
 {
 	margin-left: 2%;
+	overflow: hidden;
 }
-section.include div.container0 form div.toolbar
+/*section.include div.container0 form div.toolbar
 {
 	margin-left: 2%;
 }
-section.include div.container0 form div.toolbar ul
+section.include div.container0 form div.toolbar button.btn
 {
 	list-style-type: none;
 	margin:0;
 	padding:0;
-	overflow: hidden;
-}
-section.include div.container0 form div.toolbar ul li
-{
-	width: 8%;
-	text-align: center;
-	float:left;
-	border-right: 1px solid black;
-}
-section.include div.container0 form div.toolbar ul li a
-{
-	text-decoration: none;
+	width: 2rem;
 	outline: none;
-	color: black;
-	padding: 3%;
+	text-decoration: none;
+	border:none;
+	border:1px solid black;
+	box-shadow: 0 2px 2px gray;
+	margin-bottom: .3%;
+	cursor: pointer;
 }
+section.include div.container0 form div.toolbar button.btn:hover
+{
+	box-shadow: none;
+	background-color: #bbb;
+}*/
 section.include div.container0 form hr
 {
 	margin-left:2%;
-	width:76.5%;
+	width:100%;
 }
-section.include div.container0 form div.textfeld textarea[id="text"].contentin
+section.include div.container0 form div.textfeld
 {
-	float:none;
+	background-color: white;
 	margin-left: 2%;
-	padding:1%;
+	width: 100%;
+}
+section.include div.container0 form div.textfeld textarea[id="contentto"]
+{
+	
+	width: 100%;
+	clear:both;
+	float:none;
+	padding:.5%;
 }
 section.include div.container0 form input[type="submit"]
 {
-	margin-left:2%;
+	width: 60px; 
+	margin-left:46%;
 	margin-top: 2%;
+}
+section.include div.container0 form input[type="submit"].changbtn
+{
+	border: none;
+	border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px gray;
+}
+section.include div.container0 form input[type="submit"].changbtn:hover
+{
+	background-color: gray;
+	box-shadow:none;
 }
 
 /**************************************/

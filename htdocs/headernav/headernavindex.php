@@ -1,6 +1,5 @@
 <?php 
 include 'head/headindex.php';
-include 'Script/login.php';
 ?>
 
 <body>

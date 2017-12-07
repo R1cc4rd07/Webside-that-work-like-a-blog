@@ -1,6 +1,7 @@
 <?php
 session_start();
 include 'Script/Datenbanken.php';
+include 'Script/login.php';
 ?>
 <!DOCTYPE HTML>
 <html lang="de">

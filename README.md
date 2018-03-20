@@ -1,4 +1,4 @@
-########################## Website-that-work-like-a-blog ######################################
+# Website-that-work-like-a-blog #
 
 This website is using a database to save the writen content. You need to be logged-in to write new blog post. 
 The Login is secured by hash5. Alle information about the database is outsurced for safety.
